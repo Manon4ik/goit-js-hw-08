@@ -12,11 +12,14 @@ const galleryList = galleryItems.map( ({ preview, original, description }) =>
 ).join("")
 
 const gallery = document.getElementById("gallery");
-gallery.innerHTML = galleryList;
+if(gallery){
 
-let lightbox = new SimpleLightbox('.gallery a', 
-    { 
-        captionsData: 'alt',
-        captionDelay: 250
-    }
+  gallery.innerHTML = galleryList;
+  
+  let lightbox = new SimpleLightbox('.gallery a', 
+  { 
+    captionsData: 'alt',
+    captionDelay: 250
+  }
 );
+}

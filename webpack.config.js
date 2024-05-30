@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.min.js',
+        filename: 'index_bundle.js',
         clean: true
     },
 }
